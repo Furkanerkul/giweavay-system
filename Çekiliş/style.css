@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat,sans-serif;
+}
+
+
+body{
+    background-color: #f8f7ff;
+}
+
+body .cekilisAlan{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+}
+
+body .cekilisAlan button{
+    padding: 10px;
+    background-color: #0077b6;
+    color: white;
+    border-color: transparent;
+}
+
+body .cekilisAlan #cekilis{
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border-color: transparent;
+}
+
+body .cekilisAlan input[type="text"]{
+    padding: 10px;
+    font-weight: bold;
+}
+
+body .cekilisAlan input[type="text"]:focus{
+    outline: none;
+}
+
+
+body .cekilisAlan button:hover{
+    cursor: pointer;
+    transition: 0.50s ease-out;
+    background-color: #8900f2;
+}
+
+body .error{
+    height: 250px;
+    width: 600px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    display: none;
+    top: 200px;
+}
+
+
+
+body .error #errorIcon{
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border-radius: 100px;
+    margin-top: 50px;
+}
+
+body .error button{
+    padding: 15px;
+    border-style: none;
+    width: 200px;
+    color: white;
+    position: relative;
+    top: 20px;
+    background-color: red;
+}
+
+body .error button:hover{
+    cursor: pointer;
+    transition: 0.50s;
+    transform: scale(1.1);
+}
+
+body .cekilisKazanan{
+    position: relative;
+    background-color: white;
+    height: 100vh;
+    display: none;
+    bottom: 350px;
+}
+
+body .cekilisKazanan img{
+    margin-top: 100px;
+}
+
+body .cekilisKazanan button{
+    position: relative;
+    top: 25px;
+    background-color: #0077b6;
+    padding: 10px;
+    width: 200px;
+    color: white;
+    border-color: transparent;
+}
+
+body .cekilisKazanan button:hover{
+    transition: 0.50s ease-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+body .cekilisKazanan *{
+    margin: 4px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/kupa.png">
+    <script src="https://kit.fontawesome.com/779bad2e7b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Çekiliş</title>
+</head>
+<body>
+    <div class="cekilisAlan">
+        <div class="cekilisEkleme">
+        <input type="text" placeholder="Çekiliş Üyesi">
+        <button>Üye Ekle</button>
+        <button id="cekilis">Çekilişi Başlat</button>
+        </div>
+    </div>
+    <center>
+        <table cellspacing="10px" style="position: relative; top: 250px;">
+            <tr>
+                <th>Sıra No:</th>
+                <th>Çekiliş Üyesi</th>
+            </tr>
+            
+        </table>
+        <div class="error">
+            <i class="fa-solid fa-xmark" id="errorIcon"></i>
+            <h4 style="margin-top: 10px;">Üye Eklenemedi!</h4>
+            <p>Metin kutusunu boş bırakmayınız.</p>
+            <button onclick="uyariKapat()"><i class="fa-solid fa-xmark"></i> Kapat</button>
+        </div>
+        <div class="cekilisKazanan">
+            <img src="imgs/kupa.png" alt="kupa-resim" height="100px">
+            <h3 style="position: relative; top: 20px;">Çekiliş Tamamlandı!</h3>
+            <p style="position: relative; top: 20px; font-weight: bold;"></p>
+            <button><i class="fa-solid fa-xmark"></i> Kapat</button>
+        </div>
+        <div class="error cekiliserror">
+            <i class="fa-solid fa-xmark" id="errorIcon"></i>
+            <h4 style="margin-top: 10px;">Çekiliş Başarısız!</h4>
+            <p>Çekilişte minimum 6 kişi olması gerekli.</p>
+            <button onclick="uyariKapat()"><i class="fa-solid fa-xmark"></i> Kapat</button>
+        </div>
+    </center>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
